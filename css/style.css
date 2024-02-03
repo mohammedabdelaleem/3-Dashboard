@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #001;
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.menu {
+  background-color: #123;
+  border-radius: 8px;
+  width: 80px;
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.menu:hover {
+  width: 350px;
+}
+
+ul {
+  list-style: none;
+  position: relative; /*for log-out btn*/
+  height: 95%;
+}
+
+ul li a {
+  display: block;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px 10px 10px 5px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+ul li a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+  background-color: #ffffff55;
+  transition: all 0.5s;
+}
+
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.log-out a {
+  background-color: #a00;
+}
+
+ul li a i {
+  font-size: 25px;
+}
+
+.content {
+  width: 100%;
+  margin: 10px;
+}
+
+.title-info {
+  width: 100%;
+  background-color: royalblue;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.data-info .box {
+  border-radius: 11px;
+  background-color: #123;
+  flex-grow: 1;
+  flex-basis: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-info .box i {
+  font-size: 40px;
+}
+
+.data-info .box .data {
+  text-align: center;
+}
+
+.data-info .box .data span {
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 10px;
+}
+
+th,
+td {
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+
+th {
+  background-color: rgb(36, 91, 255);
+}
+
+.price,
+.count {
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.price {
+  background-color: green;
+}
+
+.count {
+  background-color: gold;
+  color: black;
+}

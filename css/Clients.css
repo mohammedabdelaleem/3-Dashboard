@@ -1,0 +1,13 @@
+main {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+margin: 0 auto;
+}
+
+h1 {
+  color: #a01;
+}
